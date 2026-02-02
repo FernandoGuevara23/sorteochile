@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter-Fer | Mi Sueño, Tu Suerte</title>
+    <meta name="description"
+        content="Rifa solidaria para el intercambio de Fernando a Chile. ¡Participa y gana increíbles premios!">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background-overlay" id="bg-image"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">INTER<span>FER</span></div>
+                <div class="nav-links">
+                    <a href="#premios">Premios</a>
+                    <a href="#participar">Participar</a>
+                    <a href="#sorteo">Sorteo</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container" data-aos="fade-up">
+                <div class="hero-content">
+                    <h1 id="hero-title">Mi Viaje a Chile, <br><span>Tu Gran Oportunidad</span></h1>
+                    <p id="hero-subtitle">Hola, soy Fernando. Estoy organizando esta rifa para financiar mi intercambio
+                        universitario en Chile. ¡Gracias por ser parte de este sueño!</p>
+                    <div class="hero-stats">
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                            <span class="stat-value" id="sold-count">0</span>
+                            <span class="stat-label">Vendidos</span>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                            <span class="stat-value" id="total-tickets">0</span>
+                            <span class="stat-label">Total</span>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                            <span class="stat-value" id="price-per-ticket">$0</span>
+                            <span class="stat-label">Precio</span>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                        <span class="progress-text" id="progress-text">0% completado</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#participar" class="btn btn-primary">Comprar Boleto</a>
+                        <a href="#premios" class="btn btn-secondary">Ver Premios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="about-box">
+                    <img src="" alt="Fernando" id="about-img" class="about-img">
+                    <div class="about-text">
+                        <h3 id="about-title">Sobre Mí</h3>
+                        <p id="about-desc">Cargando historia...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="premios" class="prizes">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">Increíbles <span>Premios</span></h2>
+                <div class="prizes-grid" id="prizes-grid" data-aos="fade-up">
+                    <!-- Prizes will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="participar" class="ticket-selection">
+            <div class="container">
+                <h2 class="section-title">Elige tu <span>Número de la Suerte</span></h2>
+                <p class="section-subtitle">Selecciona los números que deseas y presiona el botón para contactarme por
+                    WhatsApp.</p>
+
+                <div class="selection-summary" id="selection-summary">
+                    <div class="summary-stats">
+                        <span>Seleccionados: <strong id="selected-count">0</strong></span>
+                        <span>Total: <strong id="total-price">$0</strong></span>
+                    </div>
+
+                    <div class="buyer-form" id="buyer-form" style="display: none;">
+                        <input type="text" id="buyer-name" placeholder="Tu Nombre Completo" class="form-input">
+                        <input type="tel" id="buyer-phone" placeholder="Tu Número de Teléfono" class="form-input">
+                    </div>
+
+                    <button id="whatsapp-btn" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Apartar por WhatsApp
+                    </button>
+                </div>
+
+                <div class="tickets-grid" id="tickets-grid">
+                    <!-- Ticket grid will be injected here -->
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item"><span class="box-legend available"></span> Disponible</div>
+                    <div class="legend-item"><span class="box-legend sold"></span> Vendido / Apartado</div>
+                    <div class="legend-item"><span class="box-legend selected"></span> Seleccionado</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sorteo" class="live-draw">
+            <div class="container">
+                <div class="draw-grid">
+                    <div class="glass-card">
+                        <h2>Sorteo en <span>Vivo</span></h2>
+                        <p>El sorteo se realizará de forma transparente a través de nuestras redes sociales. ¡No te lo
+                            pierdas!</p>
+                        <div class="draw-info">
+                            <div class="draw-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span id="draw-date-text">Próximamente...</span>
+                            </div>
+                            <a href="#" id="draw-link" class="btn btn-live" target="_blank">
+                                <i class="fas fa-video"></i> Ver Transmisión
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="glass-card promo-card">
+                        <h2>¡Comparte la <span>Rifa!</span></h2>
+                        <p>Ayúdame a llegar a Chile compartiendo este link o mostrando el QR.</p>
+                        <div class="promo-content">
+                            <div class="qr-container">
+                                <img id="qr-image" src="" alt="Código QR de la Rifa">
+                            </div>
+                            <div class="link-box">
+                                <input type="text" id="page-url" readonly value="">
+                                <button onclick="copyLink()" class="btn-copy">Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Inter-Fer. Desarrollado con ❤️ por Fernando Guevara.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
