@@ -43,8 +43,8 @@ const CONFIG = {
     whatsappMessage: "¡Hola Fernando! Me gustaría apartar estos números para la rifa: ",
 
     // Promoción (URL de tu página una vez la subas y QR)
-    pageUrl: "https://tu-pagina-de-rifa.com",
-    qrImage: "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://tu-pagina-de-rifa.com",
+    pageUrl: "https://sorteofernando.vercel.app",
+    qrImage: "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://sorteofernando.vercel.app",
 
     // Imagen de fondo (puedes poner un link a una foto tuya en Chile o un paisaje)
     backgroundImage: "https://images.unsplash.com/photo-1516108317508-6788f6a160e6?q=80&w=2000",
